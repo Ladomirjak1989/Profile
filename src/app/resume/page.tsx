@@ -1,11 +1,11 @@
-import ReferencesPage from '@/components/Pages/ReferencesPage/ReferencesPage'
+import ResumePage from '@/components/Pages/ResumePage/ResumePage'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
     <main >
-    < ReferencesPage/>
+    <ResumePage />
     </main>
   </div>
   )
