@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
       <ContactContainer>
         {/* Форма */}
         <ContactForm>
-          <ContactTitle>Let's <span>talk</span></ContactTitle>
+          <ContactTitle>Let&apos;s <span>talk</span></ContactTitle>
           <ContactText>
             To request a quote or to meet up for coffee, contact me directly
             or fill out the form below.

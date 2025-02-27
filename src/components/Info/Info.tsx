@@ -15,7 +15,7 @@ const Info: React.FC = () => {
                     alt="Profile Picture"
                 />
                 <StyledParagraf>
-                    Hello, my name is Bettina.<br /> I'm a full stack web developer <br /> located in Schiedam.
+                    Hello, my name is Bettina.<br /> I&apos;m a full stack web developer <br /> located in Schiedam.
                 </StyledParagraf>
             </StyledImageWrapper>
 
