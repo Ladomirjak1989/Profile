@@ -20,7 +20,7 @@ const Info: React.FC = () => {
             </StyledImageWrapper>
 
             <StyledLinkWrapper>
-                <StyledTitle>Let's Get In Touch</StyledTitle>
+                <StyledTitle>Let&apos;s Get In Touch</StyledTitle>
                 <SocialLinks />
                 <StyledLink href="/resume">
                     <FaDownload /> View resume
