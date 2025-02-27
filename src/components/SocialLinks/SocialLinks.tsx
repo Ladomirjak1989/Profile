@@ -34,7 +34,7 @@ const SocialLinks = () => {
             <StyledLink 
                 href="tel:+31619388895" 
                 target="_blank" 
-                data-tooltip="+31 619 388 895"
+                data-tooltip="(+31) 619 388 895"
             >
                 <IconWrapper><FaPhone /></IconWrapper>
             </StyledLink>

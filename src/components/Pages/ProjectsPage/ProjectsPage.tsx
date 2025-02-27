@@ -47,7 +47,7 @@ const projects: Project[] = [
     {
         title: "Medical Cards",
         renderLink: "https://medical-cards-kappa.vercel.app/",
-        cloudinaryLink: "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740574722/medical-card_woilql_Sharpened_tpxbmk.png",
+        cloudinaryLink: "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740677637/img4_krymz4_Sharpened_gebhg2.png",
         gitLink: "https://github.com/Ladomirjak1989/Medical-Cards",
         description: "The <strong>Medical Cards app</strong> is a secure digital platform that allows users to store, manage, and share their medical records effortlessly. With easy access to prescriptions, appointments, and health history, it ensures seamless communication between patients and healthcare providers. 🏥📄"
 

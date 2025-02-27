@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   align-items: center;
   height: 100vh;
   color: #0d0d0d;
-  gap: 50px;
+  gap: 100px;
   margin-left: 0px;
 
   @media (max-width: 1024px) {
@@ -56,7 +56,7 @@ export const StyledP = styled.p`
   color: #555;
   max-width: 600px;
   line-height: 1.6;
-  margin: 0 auto; /* Центрування */
+  margin: 0 auto; 
   text-align: center;
 
   @media (max-width: 768px) {
@@ -69,7 +69,7 @@ export const StyledP = styled.p`
 `;
 
 // Контейнер для форми
-export const ContactForm = styled.div`
+export const ContactForm = styled.form`
   background: #ffffff;
   padding: 40px;
   border-radius: 12px;
@@ -172,16 +172,22 @@ export const SocialLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
 
-  @media (max-width: 480px) {
+ @media (max-width: 768px) {
     gap: 10px;
+    &::before {
+      font-size: 20px;
+      top: -25px;
+    }
   }
 `;
 
-/* Контейнер для стилізованого посилання */
+
 export const StyledLink = styled.a`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 18px;
   color: #000;
@@ -193,17 +199,21 @@ export const StyledLink = styled.a`
   transition: all 0.3s ease;
   position: relative;
   background: #fff;
+  cursor: pointer;
+  width: 180px; /* Встановлюємо однакову ширину для всіх кнопок */
+  min-height: 50px; /* Мінімальна висота для рівності */
+  text-align: center;
 
   &:hover {
     background: #ffcc00;
     color: #000;
   }
 
-  /* Додаємо tooltip */
+  /* Tooltip */
   &::after {
     content: attr(data-tooltip);
     position: absolute;
-    top: -35px;
+    bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.8);
@@ -226,8 +236,45 @@ export const StyledLink = styled.a`
   @media (max-width: 480px) {
     font-size: 16px;
     padding: 10px;
+    width: 100%; /* Робимо кнопки однаковими на мобільних */
   }
 `;
+
+
+/* Додаємо стрілку для email */
+export const EmailLinkContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px; /* Відстань між стрілкою та Email-лінком */
+
+  &::before {
+    content: "←"; /* Стрілка вліво */
+    font-size: 50px; /* Збільшений розмір */
+    font-weight: bold; /* Жирний шрифт */
+    color: #000; /* Чорний колір */
+    position: absolute;
+    left: -70px; /* Розташування ліворуч від Email-лінка */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+  @media (max-width: 768px) {
+    &::before {
+      font-size: 20px;
+      left: -20px;
+    }
+  }
+
+  /* Анімація стрілки */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(-50%) translateX(0); }
+    50% { transform: translateY(-50%) translateX(-5px); }
+  }
+`;
+
 
 export const IconWrapper = styled.span`
   font-size: 20px;
@@ -239,6 +286,16 @@ export const IconWrapper = styled.span`
   }
 
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 18px; /* Уніфікований розмір іконок */
   }
 `;
+
+
+export const SuccessMessage = styled.p`
+  color: green;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+`;
+
