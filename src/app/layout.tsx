@@ -41,7 +41,7 @@ export default function RootLayout({
       >
         <Header />
         <Info />
-        <main style={{ flex: 1 }}>{children}</main> {/* Контент розтягується */}
+        <main style={{ flex: 1 }}>{children}</main>
         <Footer />
       </body>
     </html>

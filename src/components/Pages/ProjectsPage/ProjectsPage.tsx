@@ -39,14 +39,14 @@ const projects: Project[] = [
     },
     {
         title: "Who wants to be a millionaire",
-        renderLink: "https://github.com/Ladomirjak1989/Who-wants-to-be-a-millionaire-",
+        renderLink: "https://who-wants-to-be-a-millionaire-one.vercel.app/",
         cloudinaryLink: "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740574126/millionare_a1ubav_Sharpened_raxucj.png",
         gitLink: "https://github.com/Ladomirjak1989/Who-wants-to-be-a-millionaire-",
         description: "The <strong>Who Wants to Be a Millionaire app</strong> is an interactive trivia game that challenges players with a series of multiple-choice questions, increasing in difficulty as they progress. With lifelines, engaging animations, and a competitive leaderboard, it delivers an exciting quiz experience just like the classic TV show. 💰🎉"
     },
     {
         title: "Medical Cards",
-        renderLink: "https://github.com/Ladomirjak1989/Medical-Cards/",
+        renderLink: "https://medical-cards-kappa.vercel.app/",
         cloudinaryLink: "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740574722/medical-card_woilql_Sharpened_tpxbmk.png",
         gitLink: "https://github.com/Ladomirjak1989/Medical-Cards",
         description: "The <strong>Medical Cards app</strong> is a secure digital platform that allows users to store, manage, and share their medical records effortlessly. With easy access to prescriptions, appointments, and health history, it ensures seamless communication between patients and healthcare providers. 🏥📄"

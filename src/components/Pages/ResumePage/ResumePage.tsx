@@ -49,30 +49,24 @@ import { FaDownload } from "react-icons/fa";
 import { StyledDiv, StyledMain, StyledImgWrapper, StyledLink } from "./Styled";
 
 const ResumePage: React.FC = () => {
-    const cloudinaryPDFUrl = "https://res.cloudinary.com/dq0fwucoj/raw/upload/v1740503315/Resume_o994da_d4illn.pdf";
-    const cloudinaryImageUrl = "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740422681/Resume_s0ja2l.png";
+   const cloudinaryImageUrl = "https://res.cloudinary.com/dq0fwucoj/image/upload/v1740422681/Resume_s0ja2l.png";
 
     return (
         <StyledMain>
             <StyledDiv>
-                {/* Кнопка для завантаження PDF */}
-                <StyledLink 
-                    title="Download resume" 
-                    target="_blank" 
-                    href={cloudinaryPDFUrl} 
-                    download="Bettina_Resume.pdf" 
-                    rel="noopener noreferrer"
-                >
-                    <FaDownload /> Download resume
-                </StyledLink>
-
+                
+  
+                <StyledLink href="/file/resume.pdf" download>
+                <FaDownload /> Download resume
+                </StyledLink >
+ 
                 {/* Відображення зображення резюме */}
                 <StyledImgWrapper>
-                    <Image 
-                        src={cloudinaryImageUrl} 
-                        alt="Resume Preview" 
-                        width={600} 
-                        height={800} 
+                    <Image
+                        src={cloudinaryImageUrl}
+                        alt="Resume Preview"
+                        width={600}
+                        height={800}
                         priority
                     />
                 </StyledImgWrapper>

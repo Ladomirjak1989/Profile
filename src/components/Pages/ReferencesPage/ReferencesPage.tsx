@@ -1,11 +1,14 @@
 "use client";
 
 import React from "react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { StyledSwiper, StyledSwiperWrapper, StyledText, StyledA, StyledH4, StyledSwiperSlide, StyledSwiperContainer, StyledH2  } from "./Styled";
-import "swiper/css";
-import "swiper/css/navigation";
 import { FaEnvelope } from "react-icons/fa";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 
 interface Reference {
   id: number;
@@ -116,31 +119,28 @@ const ReferencesPage: React.FC = () => {
       <StyledH2>References</StyledH2>
       <StyledSwiper
         navigation
-        modules={[Navigation]}
-        breakpoints={{
-          320: { slidesPerView: 1, spaceBetween: 10 }, // Для мобільних
-          640: { slidesPerView: 1, spaceBetween: 15 }, // Планшети
-          1024: { slidesPerView: 1, spaceBetween: 20 }, // Десктоп
-        }}
+        pagination={{ clickable: true }}
+        modules={[Navigation, Pagination]}
       >
-        {slidesConfig.map((item) => (
-          <StyledSwiperSlide key={item.id}>
-            <StyledSwiperWrapper>
-              <StyledH4>{item.name}</StyledH4>
-              <StyledH4>{item.title}</StyledH4>
-              <StyledText>{item.position}</StyledText>
-              <StyledText>{item.company}</StyledText>
-              <StyledA href={`mailto:${item.email}`}>
-                <FaEnvelope /> {item.email}
-              </StyledA>
-              <StyledText>{item.text}</StyledText>
-            </StyledSwiperWrapper>
-          </StyledSwiperSlide>
-        ))}
-      </StyledSwiper>
+       
+          {slidesConfig.map((item) => (
+            <StyledSwiperSlide key={item.id}>
+              <StyledSwiperWrapper>
+                <StyledH4>{item.name}</StyledH4>
+                <StyledH4>{item.title}</StyledH4>
+                <StyledText>{item.position}</StyledText>
+                <StyledText>{item.company}</StyledText>
+                <StyledA href={`mailto:${item.email}`}>
+                  <FaEnvelope /> {item.email}
+                </StyledA>
+                <StyledText>{item.text}</StyledText>
+              </StyledSwiperWrapper>
+            </StyledSwiperSlide>
+          ))}
+        </StyledSwiper>
+     
     </StyledSwiperContainer>
   );
-
 };
 
-export default ReferencesPage;
+export default ReferencesPage

@@ -8,15 +8,12 @@ export const StyledSwiperContainer = styled.div`
   width: 100%;
   padding: 20px;
   margin-left: 15%;
+ 
 
-  @media (max-width: 1024px) {
-    margin-left: 5%;
+  @media (max-width: 480px) {
+  margin-left:0;
   }
-
-  @media (max-width: 768px) {
-    margin-left: 0;
-    padding: 15px;
-  }
+ 
 `;
 
 export const StyledH2 = styled.h2`
@@ -41,78 +38,45 @@ export const StyledH2 = styled.h2`
     border-radius: 2px; /* Закруглення */
   }
 
-  @media (max-width: 768px) {
-    font-size: 26px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 22px;
-  }
+ 
 `;
 
 export const StyledSwiper = styled(Swiper)`
-  width: 50%;
+  width: 80%;  /* Відносний розмір для адаптивності */
+  max-width: 600px;
   height: auto;
-  margin: 20px auto;
-  padding-bottom: 30px;
-
-  @media (max-width: 1024px) {
-    width: 80%;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
+
 
 export const StyledSwiperSlide = styled(SwiperSlide)`
-  background-color: #e3f2fd;
   display: flex;
-  justify-content: center;
+  background:rgb(236, 239, 243);
   align-items: center;
+  justify-content: center;
+  height: 500px;  
+  overflow: hidden; 
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-  @media (max-width: 768px) {
-    padding: 15px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 10px;
-  }
+  box-sizing: border-box;
 `;
 
+
 export const StyledSwiperWrapper = styled.div`
-  padding: 40px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  text-align: center;
-
-  @media (max-width: 768px) {
-    padding: 20px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 15px;
-  }
+  justify-content: center;
 `;
+
 
 export const StyledText = styled.p`
   font-size: 18px;
   line-height: 1.6;
   color: #333;
-  max-width: 600px;
+ 
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 14px;
-  }
+ 
 `;
 
 export const StyledA = styled.a`
@@ -130,13 +94,7 @@ export const StyledA = styled.a`
     text-decoration: underline;
   }
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 14px;
-  }
+  
 `;
 
 export const StyledH4 = styled.h4`
@@ -145,11 +103,5 @@ export const StyledH4 = styled.h4`
   color: #222;
   margin-bottom: 10px;
 
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
-  }
+  
 `;
