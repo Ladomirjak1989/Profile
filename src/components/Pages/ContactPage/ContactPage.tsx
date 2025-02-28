@@ -170,7 +170,7 @@ const ContactPage: React.FC = () => {
           </StyledLink>
         </SocialLinksContainer>
       </ContactContainer>
-    </>
+     </>
   );
 };
 

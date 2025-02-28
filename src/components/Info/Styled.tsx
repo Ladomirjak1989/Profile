@@ -5,7 +5,10 @@ export const StyledInfo = styled.aside`
   background-image: url(https://res.cloudinary.com/dq0fwucoj/image/upload/v1740408865/photo-1617801003287-1a71d7792fdc_ffcwkh.jpg);
   min-height: 100vh;
   width: 20vw;
-  height: 100%;
+  // height: 100%;
+  top:0;
+  bottom:0;
+  left:0;
   position: fixed;
   display: flex;
   flex-direction: column;

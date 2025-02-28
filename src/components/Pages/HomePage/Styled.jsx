@@ -73,6 +73,7 @@ export const StyledWrapper = styled.div`
   gap: 30px;
   justify-content: center;
   margin-top: 20px;
+  padding-top:80px;
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -87,6 +88,7 @@ export const Styledh2 = styled.h2`
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
+  
 
   @media (max-width: 768px) {
     font-size: 24px;

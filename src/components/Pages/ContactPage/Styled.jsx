@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
   height: 100vh;
   color: #0d0d0d;
   gap: 100px;
-  margin-left: 0px;
+  
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -23,12 +23,12 @@ export const ContactContainer = styled.div`
   }
 `;
 
+
 // Контейнер для заголовка
 export const StyledHeaderContainer = styled.div`
   text-align: center;
   margin-bottom: 30px;
-  margin-left: 300px;
-
+ 
   @media (max-width: 1024px) {
     margin-left: 0;
   }
@@ -77,7 +77,7 @@ export const ContactForm = styled.form`
   width: 100%;
   text-align: center;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  margin-left: 300px;
+ 
 
   @media (max-width: 1024px) {
     margin-left: 0;

@@ -9,7 +9,6 @@ export const FooterContainer = styled.footer`
   border-top: 2px solid #0056b3;
   font-size: 14px;
   font-weight: 500;
-  position: relative;
   bottom: 0;
 
   @media (max-width: 768px) {

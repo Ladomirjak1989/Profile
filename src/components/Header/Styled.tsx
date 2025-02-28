@@ -4,12 +4,17 @@ import styled from "styled-components";
 export const NavContainer = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1rem 2rem;
   background: #001f3f;
   color: white;
-  position: relative;
-  z-index: 1000;
+  position: fixed;
+  top:0;
+  right:0;
+  height: 60px;
+  left:0;
+
+ 
 
   @media (max-width: 768px) {
     padding: 1rem; /* Зменшуємо padding на мобільних */
