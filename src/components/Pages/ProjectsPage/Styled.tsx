@@ -5,10 +5,10 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 800px; 
-  margin: 0 auto;
+  justify-content: center;
   padding-bottom: 30px;
-  margin-left: auto; 
-  margin-right: 5%;
+ 
+  
 
   @media (max-width: 1024px) {
     max-width: 700px;
@@ -25,6 +25,12 @@ export const StyledWrapper = styled.div`
     max-width: 100%;
     padding: 15px;
   }
+`;
+
+
+export const StyledDiv1 = styled.div`
+ display: flex;
+ justify-content: center;
 `;
 
 export const StyledH2 = styled.h2`
@@ -71,7 +77,7 @@ export const StyledProjectCard = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.02);
+    // transform: scale(1.02);
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
   }
 
@@ -124,7 +130,6 @@ export const StyledImg = styled.img`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.05);
   }
 `;
 

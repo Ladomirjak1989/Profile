@@ -11,7 +11,8 @@ import {
     StyledImg,
     StyledA,
     StyledP,
-    StyledDiv
+    StyledDiv,
+    StyledDiv1,
 } from "./Styled";
 
 interface Project {
@@ -56,6 +57,7 @@ const projects: Project[] = [
 
 const ProjectsPage: React.FC = () => {
     return (
+        <StyledDiv1>
         <StyledWrapper>
             <StyledH2>My Projects</StyledH2>
             {projects.map((project, index) => (
@@ -78,6 +80,7 @@ const ProjectsPage: React.FC = () => {
             ))}
 
         </StyledWrapper>
+        </StyledDiv1>
     );
 };
 

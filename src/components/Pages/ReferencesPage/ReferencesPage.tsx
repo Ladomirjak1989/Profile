@@ -12,7 +12,6 @@ import 'swiper/css/pagination';
 
 interface Reference {
   id: number;
-  title: string;
   name: string;
   position: string;
   company: string;
@@ -23,16 +22,14 @@ interface Reference {
 const slidesConfig: Reference[] = [
   {
     id: 1,
-    title: "",
-    name: "Pavlo Jermakov",
-    position: "....",
-    company: "....",
-    email: "...@gmail.com",
-    text: ""
+    name: "Pavlo Iermakov",
+    position: "Middle fullstack developer",
+    company: "Fora",
+    email: "ptopdruk@gmail.com",
+    text: `I have had the pleasure of working with Bettina Ladomirjak and witnessing her growth in the field of software development. Bettina is a highly motivated and detail-oriented developer who continuously strives to enhance her skills and deepen her understanding of both frontend and backend technologies. She demonstrates a strong analytical mindset, quickly grasps complex concepts, and applies them effectively in real-world scenarios. Her ability to troubleshoot and solve technical challenges with creativity and persistence is impressive. Bettina is also a great team player, open to feedback, and eager to collaborate to deliver high-quality solutions. I have no doubt that Bettina will continue to excel as a fullstack developer. Her dedication, problem-solving skills, and passion for learning make her a valuable asset to any development team.`
   },
   {
     id: 2,
-    title: "Sales Manager",
     name: "Maria Kovalchuk",
     position: "Sales Manager",
     company: "InnovateXr",
@@ -41,7 +38,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 3,
-    title: "Manager",
     name: "Oleksandr Ivanenko",
     position: "Business Owner",
     company: "Tech Innovators",
@@ -50,7 +46,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 4,
-    title: "Lead Developer",
     name: "Alice Johnson",
     position: "Lead Developer",
     company: "Tech Innovators",
@@ -59,7 +54,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 5,
-    title: "Project Manager",
     name: "David Smith",
     position: "Project Manager",
     company: "InnovateX",
@@ -68,7 +62,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 6,
-    title: "Senior Backend Developer",
     name: "John Williams",
     position: "Senior Backend Developer",
     company: "Web Solutions Ltd.",
@@ -77,7 +70,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 7,
-    title: "CEO",
     name: "Emma Brown",
     position: "CEO",
     company: "NextGen Tech",
@@ -86,7 +78,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 8,
-    title: "Team Lead",
     name: "Michael Thompson",
     position: "Team Lead",
     company: "CodeMasters",
@@ -95,7 +86,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 9,
-    title: "Co-worker",
     name: "Sophia Martinez",
     position: "Software Engineer",
     company: "Digital Craft",
@@ -104,7 +94,6 @@ const slidesConfig: Reference[] = [
   },
   {
     id: 10,
-    title: "Senior Engineer",
     name: "Liam Roberts",
     position: "Senior Engineer",
     company: "TechSphere",
@@ -127,7 +116,6 @@ const ReferencesPage: React.FC = () => {
             <StyledSwiperSlide key={item.id}>
               <StyledSwiperWrapper>
                 <StyledH4>{item.name}</StyledH4>
-                <StyledH4>{item.title}</StyledH4>
                 <StyledText>{item.position}</StyledText>
                 <StyledText>{item.company}</StyledText>
                 <StyledA href={`mailto:${item.email}`}>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { CertificateWrapper, CertificateImage, CertificateContainer, StyledH2,} from "./Styled";
+import { CertificateWrapper, StyledDiv1, CertificateImage, CertificateContainer, StyledH2,} from "./Styled";
 
 interface Certificate {
   id: number;
@@ -30,7 +30,7 @@ const certificates: Certificate[] = [
 
 const CertificatesPage: React.FC = () => {
   return (
-    
+    <StyledDiv1>
         <CertificateWrapper>
           <StyledH2>Certificates</StyledH2>
           <CertificateContainer>
@@ -41,7 +41,7 @@ const CertificatesPage: React.FC = () => {
             ))}
           </CertificateContainer>
         </CertificateWrapper>
-     
+        </StyledDiv1>
   );
 };
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Info from "@/components/Info/Info";
 import Footer from "@/components/Footer/Footer";
+import { StyledMain } from "@/components/StyledMain/StyledMain";
 
 
 
@@ -41,7 +42,7 @@ export default function RootLayout({
       >
         <Header />
         <Info />
-        <main style={{ flex: 1, paddingTop:"110px", paddingLeft:"20vw" }}>{children}</main>
+        <StyledMain>{children}</StyledMain>
         <Footer />
       </body>
     </html>

@@ -12,7 +12,7 @@ export const StyledIconWrapper = styled.div`
   transition: transform 0.3s ease, background 0.3s ease;
 
   &:hover {
-    transform: scale(1.05);
+    // transform: scale(1.05);
     background: #e0e0e0;
   }
 
@@ -73,7 +73,7 @@ export const CertificateWrapper = styled.section`
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-left: 35%;
+  
 
   @media (max-width: 1024px) {
     margin-left: 20%;
@@ -100,6 +100,11 @@ export const CertificateContainer = styled.div`
   }
 `;
 
+export const StyledDiv1 = styled.div`
+ display: flex;
+ justify-content: center;
+`;
+
 export const CertificateImage = styled.div`
   max-width: 750px;
   width: 100%;
@@ -109,7 +114,7 @@ export const CertificateImage = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.03);
+    // transform: scale(1.03);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
   }
 

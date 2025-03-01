@@ -4,8 +4,7 @@ import Link from "next/link";
 export const StyledInfo = styled.aside`
   background-image: url(https://res.cloudinary.com/dq0fwucoj/image/upload/v1740408865/photo-1617801003287-1a71d7792fdc_ffcwkh.jpg);
   min-height: 100vh;
-  width: 20vw;
-  // height: 100%;
+  width: 25vw;
   top:0;
   bottom:0;
   left:0;
@@ -18,7 +17,7 @@ export const StyledInfo = styled.aside`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 10;
+
 
   @media (max-width: 1024px) {
     width: 25vw; /* Трохи ширше на планшетах */
@@ -29,8 +28,8 @@ export const StyledInfo = styled.aside`
     width: 100%; /* Робимо повну ширину на мобільних */
     height: auto;
     min-height: 60vh;
-    position: relative;
-    padding: 20px;
+    position: static;
+    padding: 70px 20px 20px;
     align-items: center;
     text-align: center;
   }

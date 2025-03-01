@@ -94,7 +94,7 @@ export const MobileMenu = styled.ul`
   gap: 1rem;
   padding: 1rem;
   list-style: none;
-  transition: all 0.3s ease-in-out;
+  z-index: 1000;
 
   @media (max-width: 768px) {
     align-items: center; /* Центруємо пункти на мобільних */
